@@ -1,0 +1,172 @@
+
+body{
+    justify-content: center;
+animation: aparecer 1.5s ease-out forwards;
+opacity: 0;
+}
+@keyframes aparecer {
+0% {
+opacity: 0;
+transform: translateY(50px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@property --a {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+h2{
+    font-size: 40px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 80px;
+}
+
+.inicio {
+    position: absolute;
+    width: 550px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 2s;
+}
+
+.inicio:before {
+    content: "";
+    position: absolute;
+    filter: drop-shadow(0 15px 50px #000);
+    border-radius: 20px;
+    animation-delay: -1s;
+}
+
+.inicio:hover {
+    width: 550px;
+    height: 550px;
+}
+
+.inicio:hover{
+    inset: 40px;
+}
+
+.inicio:hover{
+    transform: translateY(0px);
+}
+
+
+.inicio {
+    position: absolute;
+    inset: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.inicio {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(126px);
+    transition: 0.5s;
+}
+
+.inicio::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 15px;
+}
+
+.info{
+    position: relative;
+    border: #000 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    z-index: 10;
+}
+
+.img {
+    margin-bottom: 0px;
+    height: 130px;
+    z-index: 20;
+}
+
+#boton{
+    background-color: #b8b8b86a;
+    display: block;
+    margin: auto;
+    left: 400px;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    transition: background-color 0.5s, outline 0.5s;
+}
+#boton:hover{
+    background-color: #ff3131;
+    outline: #3f9c3a 5px solid;
+}
+
+.inicio:hover {
+    position: absolute;
+    inset: 4px;
+    background: #ff3131;
+    border-radius: 15px;
+    border: 8px solid #3f9c3a;
+}
+
+div {
+    padding: auto;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ff3131;
+    border: 8px solid #3f9c3a;
+    margin-left:auto;
+    margin-right: auto;
+    width: 500px;
+    border-radius: 17px;
+    box-shadow: #3f9c3a;
+}
+
+button{
+    position: relative;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding: auto;
+    margin-right: 26px;
+    z-index: 10;
+    transition: background-color 0.5s, outline 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+button:hover{
+    border-radius: 30px;
+    background-color: #ff3131;
+    outline: #3f9c3a 4px solid;
+}

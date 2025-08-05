@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulación</title>
+    <link rel="stylesheet" href="archivos css/pagina web personero.css">
+    <script src="archivos JS/Introduce la informacio.js"></script>
+</head>
+<body>
+<header>
+    <img class="logo" src="imagenes2/doble logo2025-04-22 161657.png">
+</header>
+
+<nav class="nav">
+    <ul class="nav__list">
+    <li class="nav__item"><a href="index.html" class="nav__link">Inicio de sesión</a></li>
+    </ul>
+</nav>
+<main>
+    <form id="formulario">
+        <div class="content">
+            <h2>Introduce tu información como personero o contralor</h2>
+            <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Juan López Cardona" required>
+            <label for="email">Email</label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+            <label for="foto">Pon aquí tu foto</label>
+                <input type="file" id="foto" accept="image/*">
+            <label for="cargo">Tipo de cargo</label>
+                <select id="cargo">
+                    <option value="Personero">Personero</option>
+                    <option value="Contralor">Contralor</option>
+                </select>
+            <label class="propuesta" for="propuestas">Pon aquí tus propuestas</label>
+                <textarea id="propuestas" placeholder="Primera propuesta..." rows="4"></textarea>
+        <a href="index.html"><button id="enviar" type="submit">Listo</button></a>
+        </div>
+    </form>
+</main>
+<footer>
+    <p>ALTRUISMO Y COMUNICACIÓN</p>
+</footer>
+</body>
+</html>
